@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap');
+
+h1{
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+h3{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* Uses CSS grid layout to position resume sections.  */
+.container{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(12, 75px);
+  height: 100%;
+}
+
+/* Sidebar contains links, Contact, and Skills */
+.sidebar{
+  border-right: 1px solid gray;
+  margin-right: 10px;
+
+  grid-row-start: 1;
+  grid-row-end: 14;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebox{
+
+}
+
+.sidebox-bottom{
+  margin-top: auto
+  /* align-self: flex-end; */
+}
+
+/* Right side content is divided into a header, body, and footer */
+.header{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 9;
+}
+.content{
+  grid-row-start: 3;
+  grid-row-end: 11;
+  grid-column-start: 3;
+  grid-column-end: 9;
+}
+.footer{
+  grid-row-start: 11;
+  grid-row-end: 14;
+  grid-column-start: 3;
+  grid-column-end: 9;
+}
+
+.section-header{
+  margin: 0px;
+  padding: 10px auto;
+  border-bottom: 2px solid black;
+
+  font-family: 'Lato', sans-serif;
+
+}
+
+.objective{
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+}
+
+/* Job Entries */
+.job{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.job-title{
+  width: 25%;
+  border-right: 3px dotted #6cb3f5;
+}
+
+.job-desc{
+  width: 75%;
+}
+
+.job-header-text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 10px;
+}
+
+.job-header-subtext{
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  margin: 5px 10px;
+  font-style: italic;
+  text-align: right;
+
+}
+
+.job-header-date{
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  margin: 5px 10px;
+}
+
+.job-desc-text{
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  padding-left: 10px;
+  margin-left: 15px;
+}
+.job-desc-text li{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.project-list{
+ display: flex;
+ justify-content: center;
+ align-content: space-between;
+
+
+}
+
+.project-card{
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 50%;
+}
+
+.project-title{
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.project-text{
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+}
+
+.contact{
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+}
+
+/* Skill Lists  */
+.skill-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill{
+  font-size: 12px;
+  border-radius: 2px;
+  border: 1px solid #bfbfbf;
+
+  margin: 3px;
+  padding: 3px;
+}
+
+.link-group{
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.link-head{
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 5px;
+}
+.link-text{
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 5px;
+}
